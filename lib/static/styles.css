@@ -37,6 +37,30 @@
     box-sizing: content-box;
 }
 
+.control-group {
+    margin-right: 4px;
+    display: inline;
+}
+
+.control-group__item {
+    border-radius: 0;
+    margin: 0;
+}
+
+.control-group__item:first-child {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.control-group__item:not(:last-child) {
+    margin-right: -1px
+}
+
+.control-group__item:last-child {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
 .button:hover {
     border-color: #555;
 }
